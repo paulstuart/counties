@@ -32,10 +32,9 @@ poly() {
 # ensure we're at project root
 cd $(dirname $0)/..
 
-#load
+load
 poly
 
-# 
 
 
 
