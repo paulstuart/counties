@@ -1,6 +1,8 @@
 
 .timer on
-.eqp on
+-- .eqp on
+
+select count(*) from county_geo as record_count;
 
 .parameter set $lat 37.7799
 .parameter set $lon -122.2822

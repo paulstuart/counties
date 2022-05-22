@@ -23,7 +23,7 @@ with cty_prep as (
     NAMELSAD as fullname,
     STUSAB as state,
     GEOID as geoid,
-    [Geo Shape] as geoshape
+    [GeoShape] as geoshape
   from county_raw
 ),
  cty_src as (
