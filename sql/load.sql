@@ -80,7 +80,7 @@ create table county_poly as select * from xform;
 drop view xform;
 
 -- comment/delete this if this data matters to you
-drop table county_raw;
+--drop table county_raw;
 
 vacuum;
 analyze;

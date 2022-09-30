@@ -75,3 +75,10 @@ select geoid, name, state from county_geo
   where geopoly_contains_point(_shape, $lat, $lon)
 ;
 */
+
+.parameter set $lat 32.436005 -- 37.7799
+.parameter set $lon -86.648354 -- -122.2822
+
+select statename, risk from fema_geo
+  where geopoly_contains_point(_shape, $lon, $lat );
+

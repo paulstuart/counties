@@ -79,12 +79,12 @@ create table county_poly as
           */
     --limit 10;
 ;
-
+.
 .mode json
 .once county_poly.json
 select * from county_poly;
 
-select geoid,name, substr(value,0,40) as sub from decon order by geoid; 
+--select geoid,name, substr(value,0,40) as sub from decon order by geoid; 
 .exit
 
     SELECT geoid, name, fullname, state, geoshape --json_each(poly) as geopoly
